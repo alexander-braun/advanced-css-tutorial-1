@@ -35,8 +35,17 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
     &::after {
-        content: '';
+        content: "";
         display: inline-block;
         height: 100%;
         width: 100%;
@@ -45,8 +54,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        transition-duration: .4s;
-        background-color: $color-white;
+        transition: all .4s;
     }
 
     &-animated {
