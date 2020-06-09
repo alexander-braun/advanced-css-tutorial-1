@@ -6,7 +6,19 @@
 
 html {
     // Defines 1 Rem
-    font-size: 31.25%;
+    font-size: 62.5%; // = 16px
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include respond(phone) {
+        font-size: 30%;
+    }
 }
 
 body {
